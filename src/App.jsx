@@ -10,8 +10,8 @@ function App() {
       <Navbar title="PicturAI" />
       <section class="bg-[#222831] dark:bg-gray-900 h-max">
         <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-          <div className="mb-10">
-            <h1 class="block lg:mb-10  text-[#00ADB5]  font-extrabold tracking-tight uppercase text-4xl">
+          <div className="h-20">
+            <h1 class="block text-[#00ADB5] font-extrabold tracking-tight uppercase text-xl md:text-4xl">
               <Typewriter
                 words={["Generador de imagenes con inteligencia artificial"]}
                 cursor
