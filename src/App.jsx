@@ -1,25 +1,30 @@
-import { Typewriter } from "react-simple-typewriter";
-import { Content } from "./components/Content";
+import { Routes, Route } from "react-router-dom";
 import { Footer } from "./components/Footer";
 import { Navbar } from "./components/Navbar";
 import { Sidebar } from "./components/Sidebar";
 import "./index.css";
+import { Layout } from "./layout/Layout";
+import { Aplicacion } from "./pages/Aplicacion";
+import { Contact } from "./pages/Contacto";
+import { Funcionamiento } from "./pages/Funcionamiento";
 import { Inicio } from "./pages/Inicio";
+import { NoPage } from "./pages/NoPage";
 
 function App() {
-
   return (
     <>
       <Navbar title="PicturAI" />
       <Sidebar />
-      <div class="p-4 py-20 sm:ml-64">
-        <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
-          <div class="gap-4 mb-4">
-    `        <Inicio />`
-          </div>
-        </div>
-        <Footer />
-      </div>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Inicio />} />
+          <Route path="funcionamiento" element={<Funcionamiento />} />
+          <Route path="aplicacion" element={<Aplicacion />} />
+          <Route path="contacto" element={<Contacto />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+      <Footer />
     </>
   );
 }
