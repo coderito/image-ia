@@ -1,48 +1,43 @@
 import React from "react";
-import { Typewriter } from "react-simple-typewriter";
+import { Link } from "react-router-dom";
 
 export const Inicio = () => {
   return (
-    <div>
-      <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
-        <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
-          <Typewriter
-            words={["Generador de imagenes con IA"]}
-            cursor
-            cursorStyle="_"
-            typeSpeed={70}
-            deleteSpeed={50}
-            delaySpeed={1000}
-          />
-        </span>{" "}
-      </h1>
-      <div className="text-justify">
-        <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
-          Este fascinante proyecto representa una amalgama perfecta de
-          vanguardia tecnológica en el ámbito del aprendizaje automático y la
-          creatividad visual del diseño gráfico, lo que permite la creación de
-          imágenes sorprendentes, verosímiles y de alta calidad de manera
-          totalmente automatizada, gracias al uso de la extraordinaria
-          tecnología de OpenAI ❤️.
-        </p>
-        <br />
-        <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
-          Mediante el uso de algoritmos de aprendizaje automático avanzados y
-          técnicas innovadoras de diseño gráfico, este proyecto logra combinar
-          la precisión y el realismo de la inteligencia artificial con la
-          creatividad y la habilidad artística humana, para producir imágenes
-          impresionantes que satisfacen las necesidades de cualquier usuario
-          exigente.
-        </p>
+    <div className="text-center md:text-left">
+      <h2 class="md:text-6xl text-5xl font-extrabold dark:text-white">
+        Bienvenido a Picturai
+      </h2>
+      <p class="my-4 text-lg text-gray-500">
+        Una aplicacion web capaz de crear imagenes a travez de IA.
+      </p>
+      <div class="flex items-center justify-center md:justify-start mb-8">
+        <img
+          class="rounded-full"
+          src="/img/logoCircle.png"
+          alt="image description"
+        />
       </div>
-      <div className="text-center pt-8">
-        <button
-          type="button"
-          class="text-white font-bold bg-gradient-to-br from-sky-400 to-emerald-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+      <button
+        type="button"
+        class="inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      >
+        <Link to="/aplicacion">Ir a la aplicacion</Link>
+       
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className="w-4 h-4 ml-2"
         >
-          Ir a la Aplicacion    
-        </button>
-      </div>
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
+          />
+        </svg>
+      </button>
     </div>
   );
 };
