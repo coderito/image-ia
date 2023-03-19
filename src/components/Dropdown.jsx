@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const Dropdown = ({ navbarOpen, setNavbarOpen }) => {
   return (
@@ -19,7 +20,7 @@ export const Dropdown = ({ navbarOpen, setNavbarOpen }) => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6"
+              className="w-4 h-4"
             >
               <path
                 strokeLinecap="round"
@@ -34,7 +35,7 @@ export const Dropdown = ({ navbarOpen, setNavbarOpen }) => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6"
+              className="w-4 h-4"
             >
               <path
                 strokeLinecap="round"
@@ -54,7 +55,7 @@ export const Dropdown = ({ navbarOpen, setNavbarOpen }) => {
           tabindex="-1"
         >
           <div class="py-1" role="none">
-            <a
+            <Link
               href="#"
               class="text-gray-700 block px-4 py-2 text-sm"
               role="menuitem"
@@ -62,8 +63,8 @@ export const Dropdown = ({ navbarOpen, setNavbarOpen }) => {
               id="menu-item-0"
             >
               Inicio
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               class="text-gray-700 block px-4 py-2 text-sm"
               role="menuitem"
@@ -71,8 +72,8 @@ export const Dropdown = ({ navbarOpen, setNavbarOpen }) => {
               id="menu-item-1"
             >
               Funcionamiento
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               class="text-gray-700 block px-4 py-2 text-sm"
               role="menuitem"
@@ -80,8 +81,8 @@ export const Dropdown = ({ navbarOpen, setNavbarOpen }) => {
               id="menu-item-2"
             >
               Aplicacion
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               class="text-gray-700 block px-4 py-2 text-sm"
               role="menuitem"
@@ -89,7 +90,7 @@ export const Dropdown = ({ navbarOpen, setNavbarOpen }) => {
               id="menu-item-2"
             >
               Contacto
-            </a>
+            </Link>
           </div>
         </div>
       )}
