@@ -56,7 +56,7 @@ export const Dropdown = ({ navbarOpen, setNavbarOpen }) => {
         >
           <div class="py-1" role="none">
             <Link
-              href="#"
+              to="/"
               class="text-gray-700 block px-4 py-2 text-sm"
               role="menuitem"
               tabindex="-1"
@@ -65,7 +65,7 @@ export const Dropdown = ({ navbarOpen, setNavbarOpen }) => {
               Inicio
             </Link>
             <Link
-              href="#"
+              to="/funcionamiento"
               class="text-gray-700 block px-4 py-2 text-sm"
               role="menuitem"
               tabindex="-1"
@@ -74,7 +74,7 @@ export const Dropdown = ({ navbarOpen, setNavbarOpen }) => {
               Funcionamiento
             </Link>
             <Link
-              href="#"
+              to="/aplicacion"
               class="text-gray-700 block px-4 py-2 text-sm"
               role="menuitem"
               tabindex="-1"
@@ -83,7 +83,7 @@ export const Dropdown = ({ navbarOpen, setNavbarOpen }) => {
               Aplicacion
             </Link>
             <Link
-              href="#"
+              to="/contacto"
               class="text-gray-700 block px-4 py-2 text-sm"
               role="menuitem"
               tabindex="-1"
