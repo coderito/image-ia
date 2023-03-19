@@ -13,7 +13,7 @@ function App() {
           <div className="h-24 md:h-12 lg:h-14">
 
          
-          <h1 class="blocklg:mb-10 text-[#00ADB5]  font-extrabold tracking-tight uppercase text-4xl dark:text-white">
+          <h1 class="block lg:mb-10 text-[#00ADB5]  font-extrabold tracking-tight uppercase text-4xl">
             <Typewriter
               words={["Generador de imagenes con inteligencia artificial"]}
               cursor
