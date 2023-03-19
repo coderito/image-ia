@@ -1,4 +1,5 @@
 import React from "react";
+import { Dropdown } from "./Dropdown";
 import logo from "/img/logo.png";
 
 export function Navbar({ title }) {
@@ -6,7 +7,7 @@ export function Navbar({ title }) {
 
   return (
     <>
-      <nav className="fixed w-full flex flex-wrap items-center justify-between px-2 py-3 bg-[#393E46]">
+      <nav className="fixed z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 bg-[#393E46]">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <div className="flex items-center">
@@ -18,13 +19,10 @@ export function Navbar({ title }) {
                 <i className="pl-1">{title}</i>
               </a>
             </div>
-            <button
-              className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-              type="button"
-              onClick={() => setNavbarOpen(!navbarOpen)}
-            >
-              <i className="fas fa-bars"></i>
-            </button>
+            <div className="visible md:hidden">
+            <Dropdown navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen}/>
+            </div>
+            
           </div>
           <div
             className={
@@ -34,33 +32,7 @@ export function Navbar({ title }) {
             id="example-navbar-danger"
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-              <li className="nav-item">
-                <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
-                >
-                  <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i>
-                  <span className="ml-2">Yo</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
-                >
-                  <i className="fab fa-twitter text-lg leading-lg text-white opacity-75"></i>
-                  <span className="ml-2">Linkedin</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
-                >
-                  <i className="fab fa-pinterest text-lg leading-lg text-white opacity-75"></i>
-                  <span className="ml-2">Source</span>
-                </a>
-              </li>
+            
             </ul>
           </div>
         </div>
