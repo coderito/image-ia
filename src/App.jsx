@@ -5,7 +5,7 @@ import { Sidebar } from "./components/Sidebar";
 import "./index.css";
 import { Layout } from "./layout/Layout";
 import { Aplicacion } from "./pages/Aplicacion";
-import { Contact } from "./pages/Contacto";
+import { Contacto } from "./pages/Contacto";
 import { Funcionamiento } from "./pages/Funcionamiento";
 import { Inicio } from "./pages/Inicio";
 import { NoPage } from "./pages/NoPage";
