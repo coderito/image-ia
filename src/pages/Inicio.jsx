@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const Inicio = () => {
   return (
     <div className="text-center md:text-left">
-      <h2 class="md:text-6xl text-5xl font-extrabold dark:text-white">
+      <h2 class="md:text-6xl text-5xl font-extrabold">
         Bienvenido a Picturai
       </h2>
       <p class="my-4 text-lg text-gray-500">
