@@ -8,12 +8,12 @@ function App() {
   return (
     <>
       <Navbar title="PicturAI" />
-      <section class="bg-[#222831] dark:bg-gray-900">
+      <section class="bg-[#222831] dark:bg-gray-900 h-max">
         <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
           <div className="h-24 md:h-12 lg:h-14">
 
          
-          <h1 class="blocklg:mb-10 text-[#00ADB5] text-2xl font-extrabold tracking-tight uppercase md:text-3xl lg:text-4xl dark:text-white">
+          <h1 class="blocklg:mb-10 text-[#00ADB5]  font-extrabold tracking-tight uppercase text-4xl dark:text-white">
             <Typewriter
               words={["Generador de imagenes con inteligencia artificial"]}
               cursor
@@ -25,7 +25,7 @@ function App() {
           </h1>
           </div>
           <div>
-            <p class="text-lg sm:mt-10 lg:mt-0 font-medium text-[#EEEEEE] lg:text-lg text-justify lg:text-center md:px-16 xl:px-48 dark:text-gray-400">
+            <p class="text-sm sm:mt-10 lg:mt-0 font-medium text-[#EEEEEE] lg:text-lg text-justify lg:text-center md:px-16 xl:px-48 dark:text-gray-400">
               Este proyecto es una combinación de tecnología de aprendizaje
               automático y diseño gráfico para crear imágenes impresionantes y
               realistas de manera automatizada ocupando OpenAI ❤️.
@@ -56,7 +56,7 @@ function App() {
                 </svg>
               </span>
             </div>
-            <div class="flex flex-col mb-8 lg:mb-16 w-full md:w-4/12 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4 bg-[#393E46] rounded-md">
+            <div class="flex flex-col mb-8 lg:mb-16 w-full md:w-4/12 space-y-4 sm:flex-row h-5/6 sm:justify-center sm:space-y-0 sm:space-x-4 rounded-md">
               <img className="m-10 rounded-sm" src="https://picsum.photos/250/250" />
             </div>
           </div>
