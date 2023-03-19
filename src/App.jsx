@@ -10,8 +10,8 @@ function App() {
       <Navbar title="PicturAI" />
       <section class="bg-[#222831] dark:bg-gray-900 h-max">
         <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-          <div className="h-20">
-            <h1 class="block text-[#00ADB5] font-extrabold tracking-tight uppercase text-xl md:text-4xl">
+          <div className="h-28 md:h-20 mt-10 lg:mt-5">
+            <h1 class="block text-[#00ADB5] font-extrabold tracking-tight uppercase text-2xl md:text-4xl">
               <Typewriter
                 words={["Generador de imagenes con inteligencia artificial"]}
                 cursor
@@ -31,7 +31,6 @@ function App() {
               de manera totalmente automatizada, gracias al uso de la
               extraordinaria tecnología de OpenAI ❤️.
             </p>
-            <br />
             <p class="text-sm sm:mt-10 lg:mt-0 font-medium text-[#EEEEEE] lg:text-lg text-justify md:px-16 xl:px-48 ">
               Mediante el uso de algoritmos de aprendizaje automático avanzados
               y técnicas innovadoras de diseño gráfico, este proyecto logra
@@ -49,25 +48,18 @@ function App() {
                 placeholder="Placeholder"
                 class="px-3 py-4 placeholder-slate-300 text-[#EEEEEE] relative bg-[#393E46] rounded text-base border-0 shadow outline-none focus:outline-none focus:ring w-full pr-10"
               />
-              <span className="z-10 cursor-pointer h-full leading-snug font-normal text-center text-slate-300 absolute bg-transparent rounded text-lg items-center justify-center w-8 right-0 pr-2 py-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-                  />
-                </svg>
-              </span>
+            
             </div>
-            <div class="flex flex-col mb-8 lg:mb-16 w-full md:h-auto md:w-4/12 space-y-4 sm:space-y-0 sm:space-x-4 rounded-md">
+            <div className="w-full md:w-4/12">
+            <button
+              type="button"
+              className="text-white  bg-gradient-to-r w-full mb-6 from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 "
+            >
+              Buscar
+            </button>
+            <div class="flex flex-col mb-8 lg:mb-16  md:h-auto  space-y-4 sm:space-y-0 sm:space-x-4 rounded-md">
               <img className="rounded-sm" src="https://picsum.photos/250/250" />
+            </div>
             </div>
           </div>
 
