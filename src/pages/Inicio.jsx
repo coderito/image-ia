@@ -4,22 +4,22 @@ import { Link } from "react-router-dom";
 export const Inicio = () => {
   return (
     <div className="text-center md:text-left">
-      <h2 class="md:text-6xl text-5xl font-extrabold">
+      <h2 class="md:text-6xl text-5xl font-extrabold text-[#08D9D6]">
         Bienvenido a Picturai
       </h2>
-      <p class="my-4 text-lg text-gray-500">
+      <p class="my-4 text-lg text-[#EAEAEA]">
         Una aplicacion web capaz de crear imagenes a travez de IA.
       </p>
-      <div class="flex items-center justify-center md:justify-start mb-8">
+      <div class="flex items-center justify-center md:justify-start mb-8 ">
         <img
-          class="rounded-full"
+          class="rounded-full ring-1 ring-[#FF2E63]"
           src="/img/logoCircle.png"
           alt="image description"
         />
       </div>
       <button
         type="button"
-        class="inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        class="inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-[#252A34] bg-[#08D9D6] rounded-lg hover:bg-[#08d9d2f2] focus:ring-4 focus:outline-none"
       >
         <Link to="/aplicacion">Ir a la aplicacion</Link>
        
