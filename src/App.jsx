@@ -56,8 +56,8 @@ function App() {
                 </svg>
               </span>
             </div>
-            <div class="flex flex-col mb-8 lg:mb-16 w-full md:w-4/12 space-y-4 sm:flex-row h-5/6 sm:justify-center sm:space-y-0 sm:space-x-4 rounded-md">
-              <img className="m-10 rounded-sm" src="https://picsum.photos/250/250" />
+            <div class="flex flex-col mb-8 lg:mb-16 w-full h-screen md:h-auto md:w-4/12 space-y-4 sm:space-y-0 sm:space-x-4 rounded-md">
+              <img className="rounded-sm" src="https://picsum.photos/250/250" />
             </div>
           </div>
 
