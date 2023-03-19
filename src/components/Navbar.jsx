@@ -9,13 +9,13 @@ export function Navbar({ title }) {
       <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-[#393E46]">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center">
               <img className="w-5 h-5" src={logo} />
               <a
                 className="text-sm font-bold leading-relaxed inline-block mr-4 whitespace-nowrap uppercase text-white"
                 href="#pablo"
               >
-                <i>{title}</i>
+                <i className="pl-1">{title}</i>
               </a>
             </div>
             <button
