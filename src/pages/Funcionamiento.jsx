@@ -3,10 +3,10 @@ import React from 'react'
 export const Funcionamiento = () => {
   return (
     <div>
-    <h1 class="mb-4 text-xl font-extrabold leading-none tracking-tight text-[#08D9D6] md:text-5xl lg:text-6xl dark:text-white">Buscamoser ser la aplicacion <span class="text-[#FF2E63]">#1</span> en experiencia de usuario.</h1>
+    <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-[#08D9D6] md:text-5xl lg:text-6xl dark:text-white">Buscamoser ser la aplicacion <span class="text-[#FF2E63]">#1</span> en experiencia de usuario.</h1>
 
       <div className="text-justify text-[#EAEAEA]">
-        <p class="text-lg font-normal lg:text-xl dark:text-gray-400">
+        <p class="text-md font-normal lg:text-xl dark:text-gray-400">
           Este fascinante proyecto representa una amalgama perfecta de
           vanguardia tecnológica en el ámbito del aprendizaje automático y la
           creatividad visual del diseño gráfico, lo que permite la creación de
@@ -15,7 +15,7 @@ export const Funcionamiento = () => {
           tecnología de OpenAI ❤️.
         </p>
         <br />
-        <p class="text-lg font-normal lg:text-xl dark:text-gray-400">
+        <p class="text-md font-normal lg:text-xl dark:text-gray-400">
           Mediante el uso de algoritmos de aprendizaje automático avanzados y
           técnicas innovadoras de diseño gráfico, este proyecto logra combinar
           la precisión y el realismo de la inteligencia artificial con la
