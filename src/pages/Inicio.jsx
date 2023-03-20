@@ -7,7 +7,7 @@ export const Inicio = () => {
       <h2 class="md:text-6xl text-5xl font-extrabold text-[#08D9D6]">
         Bienvenido a Picturai
       </h2>
-      <p class="my-4 text-lg text-[#EAEAEA]">
+      <p class="my-4 text-md  lg:text-xl text-[#EAEAEA]">
         Una aplicacion web capaz de crear imagenes a travez de IA.
       </p>
       <div class="flex items-center justify-center md:justify-start mb-8 ">
@@ -22,7 +22,7 @@ export const Inicio = () => {
         class="inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-[#252A34] bg-[#08D9D6] rounded-lg hover:bg-[#08d9d2f2] focus:ring-4 focus:outline-none"
       >
         <Link to="/aplicacion">Ir a la aplicacion</Link>
-       
+
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

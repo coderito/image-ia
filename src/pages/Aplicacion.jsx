@@ -22,14 +22,14 @@ export const Aplicacion = () => {
             </div>
           </div>
           <div class="flex flex-col items-start mt-12 mb-16 text-left lg:flex-grow lg:w-1/2 lg:pl-6 xl:pl-24 md:mb-0 xl:mt-0">
-            <span class="mb-8 text-xs font-bold tracking-widest text-[#08D9D6] uppercase">
+            <span class="mb-8 text-md font-bold tracking-widest text-[#08D9D6] uppercase">
               {" "}
               Picturai{" "}
             </span>
-            <h1 class="mb-8 text-4xl font-bold leading-none tracking-tighter text-[#FF2E63] md:text-7xl lg:text-5xl">
+            <h1 class="mb-8 text-2xl font-bold leading-none tracking-tighter text-[#FF2E63] md:text-7xl lg:text-5xl">
               Crea imagenes a travez de IA
             </h1>
-            <p class="mb-8 text-base leading-relaxed text-left text-[#EAEAEA]">
+            <p class="mb-8 text-md  lg:text-xl leading-relaxed text-left text-[#EAEAEA]">
               Create an image from text prompt
             </p>
             <form className="w-full">
